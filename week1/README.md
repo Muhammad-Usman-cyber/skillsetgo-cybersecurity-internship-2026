@@ -9,7 +9,7 @@ Build the foundational security knowledge and evidence required by the roadmap: 
 |---|------|----------------|---------|--------|
 | 1 | Networking fundamentals | Notes + diagram | `networking-fundamentals/notes.md` | ✅ Done |
 | 2 | Linux & system-security exercises | Terminal logs/screenshots + notes | `linux-security/notes.md`, `linux-security/screenshots/` | ✅ Done |
-| 3 | Threat & vulnerability identification | Reference document | `vulnerability-id/findings.md` | Not started |
+| 3 | Threat & vulnerability identification | Reference document | `vulnerability-id/findings.md`, `vulnerability-id/screenshots`| ✅ Done |
 | 4 | Basic security assessment | Assessment notes + screenshots | `security-assessment/assessment.md` | Not started |
 
 ## Tools used
