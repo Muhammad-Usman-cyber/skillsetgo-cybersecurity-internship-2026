@@ -18,11 +18,11 @@ This repository is my working record for the Skill Set Go Cybersecurity Internsh
 
 ## External Credentials Tracker
 
-| # | Platform | Credential | Status |
-|---|----------|-----------|--------|
-| 1 | | | Not started |
-| 2 | | | Not started |
-| 3 | | | Not started |
+| # | Platform | Credential / Course | Evidence saved |
+|---|----------|---------------------|------------------|
+| 1 | Forage | Deloitte Cyber Job Simulation | ✅ |
+| 2 | Forage | Mastercard Cybersecurity Virtual Experience Program | ✅ |
+| 3 | Forage | AIG Shields Up: Cybersecurity Virtual Experience Program | ✅ |
 | 4 | | | Not started |
 
 ## Portfolio Projects (3 mini + 2 major)
