@@ -12,7 +12,7 @@ Study the OWASP Top 10, identify vulnerabilities in a legal practice environment
 | 1 | OWASP Top 10 study | Summary document | `owasp-top10-study/summary.md` | ✅ Done |
 | 2 | Vulnerability identification (legal practice env) | Findings log + screenshots | `vulnerability-id/findings.md`, `vulnerability-id/screenshots/` | ✅ Done |
 | 3 | Authentication/session weakness analysis | Analysis notes | `auth-session-analysis/notes.md` | ✅ Done |
-| 4 | Penetration-testing style report | Structured PDF report | `pentest-report/report.pdf` | Not started |
+| 4 | Penetration-testing style report | Structured PDF report | `pentest-report/report.pdf` | ✅ Done |
 
 ## Tools used
 - DVWA (Damn Vulnerable Web Application), local Docker container
