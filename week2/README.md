@@ -30,4 +30,6 @@ Study the OWASP Top 10, identify vulnerabilities in a legal practice environment
 - Predictable session ID generation (`md5()` of an incrementing counter) — `auth-session-analysis/notes.md`
 
 ## Result / Reflection
-_(fill in once the Week 2 PDF report is complete)_
+Week 2 produced 3 validated vulnerabilities (SQL Injection, OS Command Injection, Predictable Session IDs) across DVWA, spanning 3 distinct OWASP Top 10:2025 categories (Injection, Authentication Failures, Cryptographic Failures). Combined with Week 1's Juice Shop findings, this internship has now demonstrated hands-on evidence across 4 different OWASP categories rather than repeating the same vulnerability class.
+
+The most valuable lesson was in the session-ID finding specifically: reading the actual server-side source code (rather than just observing behavior) revealed the true root cause — an MD5 hash with no random input — which a black-box test alone might have only flagged as "suspicious" without being able to explain *why* it was weak or how confidently exploitable it was. Next time, I'd prioritize source review earlier in the process wherever it's available, rather than treating it as a final confirmation step.
