@@ -35,4 +35,4 @@ This temp-file artifact is a documented byproduct of PowerShell evaluating scrip
 The Nmap and Hydra techniques were executed and confirmed attacker-side, but the corresponding host-side detection queries (Sysmon Event ID 3 for the port scan; repeated authentication-failure events for the brute force) were not run and saved before the lab environment was decommissioned. This gap is recorded here deliberately rather than fabricated — full reasoning in `../suspicious-activity-analysis/writeup.md`.
 
 ## Evidence
-Screenshot: `screenshots/08-dashboard-soc-overview.png` (raw Splunk log view from the home lab).
+Screenshot: `../screenshots/08-dashboard-soc-overview.png` (raw Splunk log view from the home lab).
