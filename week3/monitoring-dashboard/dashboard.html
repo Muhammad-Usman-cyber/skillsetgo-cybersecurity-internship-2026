@@ -1,1 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOC Overview — Home Lab Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0F1420;
+    --panel: #171E2E;
+    --panel-border: #2A3348;
+    --text: #E7EBF3;
+    --text-muted: #8592A8;
+    --amber: #E3A23D;
+    --cyan: #52B4C4;
+    --red: #D9635C;
+    --green: #4FAE7E;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 40px 24px 64px;
+  }
+  .wrap { max-width: 1040px; margin: 0 auto; }
 
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid var(--panel-border);
+    padding-bottom: 20px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  header p {
+    margin: 4px 0 0;
+    color: var(--text-muted);
+    font-size: 13.5px;
+  }
+  .status-pill {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11.5px;
+    color: var(--text-muted);
+    border: 1px solid var(--panel-border);
+    padding: 5px 10px;
+    white-space: nowrap;
+  }
+
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--panel-border);
+    border: 1px solid var(--panel-border);
+    margin-bottom: 32px;
+  }
+  .metric {
+    background: var(--panel);
+    padding: 20px 18px;
+  }
+  .metric .num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .metric .label {
+    color: var(--text-muted);
+    font-size: 12px;
+    margin-top: 6px;
+  }
+
+  section { margin-bottom: 32px; }
+  h2 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: none;
+    color: var(--text);
+    margin: 0 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--panel-border);
+  }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th {
+    text-align: left;
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 11.5px;
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--panel-border);
+  }
+  td {
+    padding: 12px;
+    border-bottom: 1px solid var(--panel-border);
+    vertical-align: top;
+  }
+  tr:last-child td { border-bottom: none; }
+  .mono { font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; color: var(--text-muted); }
+
+  .badge {
+    display: inline-block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    padding: 3px 8px;
+    border: 1px solid;
+  }
+  .badge.confirmed { color: var(--green); border-color: var(--green); }
+  .badge.gap { color: var(--amber); border-color: var(--amber); }
+
+  .detail-panel {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    padding: 20px;
+  }
+  .detail-panel .event-line {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+    color: var(--cyan);
+    margin: 3px 0;
+  }
+  .detail-panel .event-line span { color: var(--text-muted); }
+  .detail-panel .note {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--panel-border);
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  .gap-note {
+    border: 1px solid var(--panel-border);
+    border-left: 3px solid var(--amber);
+    padding: 14px 18px;
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid var(--panel-border);
+    font-size: 12px;
+    color: var(--text-muted);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  @media (max-width: 640px) {
+    .metrics { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div>
+      <h1>SOC Overview</h1>
+      <p>Personal Security Operations Lab — Sysmon + Splunk — Week 3, Threat Detection</p>
+    </div>
+    <div class="status-pill">LAB STATUS: DECOMMISSIONED · DATA FROM 2026-07-20</div>
+  </header>
+
+  <div class="metrics">
+    <div class="metric">
+      <div class="num">1,001</div>
+      <div class="label">Sysmon events ingested</div>
+    </div>
+    <div class="metric">
+      <div class="num">3</div>
+      <div class="label">Attack techniques simulated</div>
+    </div>
+    <div class="metric">
+      <div class="num">1</div>
+      <div class="label">Fully evidenced detections</div>
+    </div>
+    <div class="metric">
+      <div class="num">3</div>
+      <div class="label">MITRE ATT&amp;CK techniques mapped</div>
+    </div>
+  </div>
+
+  <section>
+    <h2>Simulated activity &amp; detection status</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Technique</th>
+          <th>MITRE ATT&amp;CK</th>
+          <th>Attack Evidence</th>
+          <th>Detection Evidence</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Network Reconnaissance (Nmap full port scan)</td>
+          <td class="mono">T1046</td>
+          <td><span class="badge confirmed">CONFIRMED</span></td>
+          <td><span class="badge gap">GAP</span></td>
+        </tr>
+        <tr>
+          <td>SMB Brute-Force Authentication (Hydra)</td>
+          <td class="mono">T1110.001</td>
+          <td><span class="badge confirmed">CONFIRMED</span></td>
+          <td><span class="badge gap">GAP</span></td>
+        </tr>
+        <tr>
+          <td>Encoded PowerShell Execution</td>
+          <td class="mono">T1059.001 / T1027</td>
+          <td><span class="badge confirmed">CONFIRMED</span></td>
+          <td><span class="badge confirmed">CONFIRMED</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Fully evidenced detection — encoded PowerShell execution</h2>
+    <div class="detail-panel">
+      <div class="event-line"><span>Sourcetype:</span> sysmon_export &nbsp;·&nbsp; <span>Event ID:</span> 11 (FileCreate)</div>
+      <div class="event-line"><span>Image:</span> C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</div>
+      <div class="event-line"><span>TargetFilename:</span> ...\Temp\__PSScriptPolicyTest_kpxpnatu.qgs.ps1</div>
+      <div class="event-line"><span>User:</span> DESKTOP-TM6C394\Muhammad Usman</div>
+      <div class="note">
+        This temp-file artifact is a documented byproduct of PowerShell evaluating script execution policy —
+        useful as a supporting IOC for script-based execution, correlated here with the attacker-side encoded
+        <code>-enc</code> command by timestamp and host. Full walkthrough in
+        <code>../security-log-study/notes.md</code>.
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Known evidence gap</h2>
+    <div class="gap-note">
+      The Nmap and Hydra techniques were executed and confirmed attacker-side, but the corresponding host-side
+      detection queries (Sysmon Event ID 3 for the port scan; repeated authentication-failure events for the
+      brute force) were not run and saved before the lab environment was decommissioned. This gap is recorded
+      here deliberately rather than fabricated — full reasoning in
+      <code>../suspicious-activity-analysis/writeup.md</code>.
+    </div>
+  </section>
+
+  <footer>
+    <span>Source data: personal SOC home lab, Kali attacker VM → Windows 10 target</span>
+    <span>Skill Set Go Cybersecurity Internship — Week 3</span>
+  </footer>
+
+</div>
+</body>
+</html>
