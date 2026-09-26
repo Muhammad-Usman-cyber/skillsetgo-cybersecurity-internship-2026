@@ -9,10 +9,10 @@ Study security logs and identify IOCs, build a log-monitoring workflow, analyze 
 
 | # | Task | Evidence type | File(s) | Status |
 |---|------|----------------|---------|--------|
-| 1 | Security log study | Notes document | `security-log-study/notes.md` | Not started |
-| 2 | Log-monitoring workflow | Workflow document + sample outputs | `log-monitoring-workflow/workflow.md` | Not started |
-| 3 | Simulated suspicious activity analysis | Analysis write-up | `suspicious-activity-analysis/writeup.md` | Not started |
-| 4 | Security monitoring dashboard | Dashboard file/screenshots | `monitoring-dashboard/` | Not started |
+| 1 | Security log study | Notes document | `security-log-study/notes.md` | ✅ Done |
+| 2 | Log-monitoring workflow | Workflow document + sample outputs | `log-monitoring-workflow/workflow.md` | ✅ Done |
+| 3 | Simulated suspicious activity analysis | Analysis write-up | `suspicious-activity-analysis/writeup.md` | ✅ Done |
+| 4 | Security monitoring dashboard | Dashboard file/screenshots | `monitoring-dashboard/` | ✅ Done |
 
 ## Tools used
 - Splunk Enterprise (existing SOC home lab: Kali attacker VM to Windows 10 target)
