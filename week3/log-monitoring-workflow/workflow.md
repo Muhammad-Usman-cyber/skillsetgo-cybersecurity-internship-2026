@@ -66,4 +66,4 @@ Image, TargetFilename, ProcessGuid]
 This workflow mirrors a real SOC's log pipeline at small scale: an agent generating telemetry is worthless without centralized ingestion, and centralized ingestion is unmanageable at scale without targeted, repeatable filtering. The gap identified in `../suspicious-activity-analysis/writeup.md` (missing detection evidence for the Nmap and Hydra techniques) is directly explained by this workflow — Stage 3 (targeted filtering) was only executed for the PowerShell technique, not the other two, before the lab was decommissioned. A mature monitoring workflow would define and save these targeted searches in advance for every technique being tested, rather than improvising them reactively.
 
 ## Evidence
-Screenshots saved in `screenshots/`: `03-windows-sysmon-running.png`, `05-logs-confirmed.png`.
+Screenshots saved in `../screenshots/`: `03-windows-sysmon-running.png`, `05-logs-confirmed.png`.
