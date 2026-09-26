@@ -23,4 +23,5 @@ Study security logs and identify IOCs, build a log-monitoring workflow, analyze 
 Reusing and extending the existing personal SOC home lab (Splunk ingesting Sysmon logs, 3 simulated attack techniques: Nmap recon, SMB brute-force, encoded PowerShell execution).
 
 ## Result / Reflection
-_(fill in once Week 3 tasks are complete)_
+
+This week's work highlighted the difference between running an attack and actually proving it was detected. Of 3 simulated techniques (Nmap recon, SMB brute-force, encoded PowerShell execution), only the PowerShell one has a complete attack-to-detection story, because a targeted Splunk search was run and captured for it at the time — the other two lacked an equivalent saved query before the lab was decommissioned. The lesson: capture and export detection evidence immediately after each simulated technique rather than assuming raw log volume can be reconstructed into findings later. This gap is documented transparently across the log study, workflow, and suspicious-activity docs rather than papered over, which is itself realistic SOC practice — not every alert gets fully investigated in time, and knowing what wasn't covered is as important as what was.
