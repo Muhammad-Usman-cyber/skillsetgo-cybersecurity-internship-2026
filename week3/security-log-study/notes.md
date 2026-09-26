@@ -52,5 +52,5 @@ This specific event is a **`__PSScriptPolicyTest_*.ps1`** temp file — a well-d
 Log volume alone (1,001 raw events from a few hours of activity) illustrates why manual log review doesn't scale — this is exactly the motivation for the structured search/correlation workflow built in Deliverable #2, and the dashboard in Deliverable #4.
 
 ## Evidence
-Screenshots saved in `screenshots/`:
+Screenshots saved in `../screenshots/`:
 `07-detections-sysmon-events-table.png` (log volume/structure overview), `07-detection-powershell.png` (PowerShell IOC detail)
