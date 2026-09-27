@@ -28,9 +28,9 @@ This repository is my working record for the Skill Set Go Cybersecurity Internsh
 ## Portfolio Projects (3 mini + 2 major)
 
 | Project | Type | Repo folder | LinkedIn post |
-|---------|------|-------------|----------------|
-| Security Foundations Reference Pack | Mini | `week1/` | — |
-| OWASP Top 10 Awareness & Analysis Report | Mini | `week2/` | — |
+|---|---|---|---|
+| Security Foundations Reference Pack | Mini | `week1/` | [View post](https://www.linkedin.com/posts/muhammad-usman-cyber_cybersecurity-soc-internship-activity-7508777999618519041-8neD) |
+| OWASP Top 10 Awareness & Analysis Report | Mini | `week2/` | [View post](https://www.linkedin.com/posts/muhammad-usman-cyber_cybersecurity-owasp-websecurity-activity-7509245235789717505-Om3k) |
 | Security Monitoring Dashboard | Mini | `week3/` | — |
 | Controlled Security Assessment & Risk Report | Major | `week4/` | — |
 | Complete Cybersecurity Capstone | Major | `week4/` | — |
