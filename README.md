@@ -23,7 +23,7 @@ This repository is my working record for the Skill Set Go Cybersecurity Internsh
 | 1 | Forage | Deloitte Cyber Job Simulation | ✅ |
 | 2 | Forage | Mastercard Cybersecurity Virtual Experience Program | ✅ |
 | 3 | Forage | AIG Shields Up: Cybersecurity Virtual Experience Program | ✅ |
-| 4 | | | Not started |
+| 4 | Forage | Tata Cybersecurity Analyst Job Simulation | ✅ |
 
 ## Portfolio Projects (3 mini + 2 major)
 
@@ -31,9 +31,9 @@ This repository is my working record for the Skill Set Go Cybersecurity Internsh
 |---|---|---|---|
 | Security Foundations Reference Pack | Mini | `week1/` | [View post](https://www.linkedin.com/posts/muhammad-usman-cyber_cybersecurity-soc-internship-activity-7508777999618519041-8neD) |
 | OWASP Top 10 Awareness & Analysis Report | Mini | `week2/` | [View post](https://www.linkedin.com/posts/muhammad-usman-cyber_cybersecurity-owasp-websecurity-activity-7509245235789717505-Om3k) |
-| Security Monitoring Dashboard | Mini | `week3/` | — |
-| Controlled Security Assessment & Risk Report | Major | `week4/` | — |
-| Complete Cybersecurity Capstone | Major | `week4/` | — |
+| Security Monitoring Dashboard | Mini | `week3/` | [View post](https://lnkd.in/p/dphz5kgX) |
+| Controlled Security Assessment & Risk Report | Major | `week4/` | [View post](https://lnkd.in/p/dRmY6SJj) |
+| Complete Cybersecurity Capstone | Major | `week4/` | [View post](https://lnkd.in/p/dRmY6SJj) |
 
 ## Notes
 - No credentials, tokens, or personal data are committed to this repository.
