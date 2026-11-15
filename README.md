@@ -38,3 +38,8 @@ This repository is my working record for the Skill Set Go Cybersecurity Internsh
 ## Notes
 - No credentials, tokens, or personal data are committed to this repository.
 - All lab work is performed in legal/authorized environments (TryHackMe, local VMs).
+
+## 🎓 Internship Completion
+
+**Status:** Completed — all 4 weeks, 16 core tasks, and the capstone project submitted and approved.
+**Certificate:** [View completion certificate](Muhammad-Usman-cert.pdf)
